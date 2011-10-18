@@ -1,0 +1,18 @@
+Notes
+=======
+1. Any application needs to talk to the android LocationService to get the location.
+2. An activity can talk to Location Service through the LocationManager class. An activity asks for a LocationManager object using the getSystemService call. 
+3. The interface for receiving location updates is defined in ILocationManger: http://www.androidjavadoc.com/1.0_r1_src/android/location/ILocationManager.html This is a private system internal class. 
+4. This interface is implemented only by ILocationManager.Stub http://www.androidjavadoc.com/1.0_r1_src/android/location/ILocationManager.Stub.html
+   The code for this stub can be found at: out/target/common/obj/JAVA_LIBRARIES/framework_intermediates/src/location/java/android/location/ILocationManager.java
+      You can read it online at: http://grepcode.com/file/repository.grepcode.com/java/ext/com.google.android/android/2.3_r1/android/location/ILocationManager.java#ILocationManager.Stub.asBinder%28%29
+
+      This I have copied the sections of code from ILocationManager.Stub that I think are relevant to our implementation. I have attached it in a text file. I believe our logging code should go into   reportLocation and getLastKnownLocation. 
+
+      I am reading up on the other functions they have and 
+
+      Other relevant pieces of code: 
+      ======================
+      Location Manager Service: frameworks/base/services/java/com/android/server/LocationManagerService.java
+      LocationManager : frameworks/base/location/java/android/location/LocationManager.java
+      ILocationListener.Stub: 
