@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent"
+    android:orientation="vertical">
 <TextView xmlns:android="http://schemas.android.com/apk/res/android"
   android:id="@+id/textview"
   android:layout_width="fill_parent"
   android:layout_height="fill_parent"
   android:text="@string/hello"/>
+  
+  <ImageView android:id="@+id/footprint_image"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:paddingLeft="4dip" android_paddingRight="4dip"
+            android:src="@drawable/footprint"  />
+   </LinearLayout>
