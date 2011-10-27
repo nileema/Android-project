@@ -18,7 +18,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-
 public class HelloAndroidActivityTest extends Activity {
 	/** Called when the activity is first created. */
 	private static final String TAG = "HeloWorldActivity";

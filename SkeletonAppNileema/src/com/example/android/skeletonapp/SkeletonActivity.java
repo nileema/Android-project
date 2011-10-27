@@ -60,7 +60,8 @@ public class SkeletonActivity extends Activity {
         // Create a full screen window
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
-
+        Intent i = new Intent();
+        
         // Inflate our UI from its XML layout description.
         setContentView(R.layout.skeleton_activity);
         world = ((ImageView) findViewById(R.id.world_image));
